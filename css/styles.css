@@ -13,8 +13,15 @@ body {
 .section-headings {
     text-align: center;
     color: rgb(99, 30, 30);
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0 auto;
+    /* border-bottom: .2em solid rgb(99, 30, 30); */
+}
+
+hr {
+    border: 5px solid rgb(99, 30, 30);
+    border-radius: 5px;
+    width: 50%;
 }
 
 /* Nav and hero sections */
@@ -73,7 +80,7 @@ nav li {
     background-size: cover;
     background-attachment: fixed;
     background-image: linear-gradient(rgb(27, 13, 13, 0.7), rgba(248, 227, 227, 0.3)), url(/imgs/coffe_shop.jpg);
-    border-bottom: 5vh solid rgb(99, 30, 30);
+    /* border-bottom: 5vh solid rgb(99, 30, 30); */
     opacity: .95;
 }
 
@@ -95,11 +102,11 @@ nav li {
 .menu {
     margin: 0;
     width: 100%;
-    height: 75vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-content: center;
-    border-top: 1em solid rgb(99, 30, 30);
+    /* border-top: 1em solid rgb(99, 30, 30); */
     /* background-color: rgb(199, 199, 199); */
 }
 
@@ -118,7 +125,7 @@ nav li {
 .menu-pics {
     width: 100%;
     height: 50%;
-    
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(73, 73, 73);
@@ -142,7 +149,11 @@ nav li {
 
 /* Specials */
 #two-tone {
-    background-color: rgb(46, 44, 44);
+    /* background-color: rgb(46, 44, 44); */
+}
+
+#two-tone h2 {
+    /* font-size: 2.5em; */
 }
 
 .specials {
@@ -150,12 +161,13 @@ nav li {
     margin: auto;
     width: 75%;
     height: 50vh;
-    border: .5em solid black;
+    /* border: .5em solid black; */
+    
 }
 
 .specials p, .specials h2 {
     font-size: 2em;
-    color: blue;
+    color: rgb(99, 30, 30);
     margin: 10px;
 }
 
@@ -166,7 +178,8 @@ nav li {
 
 .special-items {
     /* flex-grow: 2; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    margin-top: 2em;
 }
 
 #special-pic {
@@ -178,10 +191,12 @@ nav li {
     background-image: url(/imgs/pancakes1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1em solid rgb(99, 30, 30);
+    border-radius: 10px;
 }
 
 #new-color {
-    background-color: grey;
+    /* background-color: grey; */
 }
 /* Contact section */
 #reverse-tone {
