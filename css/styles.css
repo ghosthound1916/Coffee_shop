@@ -1,6 +1,12 @@
 /* Font styles */
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yanone+Kaffeesatz:wght@500&display=swap');
 
+:root {
+    --redB: rgb(145, 17, 17);
+    
+  }
+  
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +18,7 @@ body {
 /* Section headings */
 .section-headings {
     text-align: center;
-    color: rgb(99, 30, 30);
+    color: var(--redB);
     font-size: 2.5em;
     margin: 0 auto;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
@@ -20,7 +26,7 @@ body {
 }
 
 hr {
-    border: 5px solid rgb(99, 30, 30);
+    border: 5px solid var(--redB);
     border-radius: 5px;
     width: 50%;
 }
@@ -42,7 +48,7 @@ nav img {
 }
 
 nav a {
-    color: rgb(99, 30, 30);
+    color: var(--redB);
     text-shadow: 1px 1px rgb(179, 179, 179);
     text-decoration: none;
     font-size: 2em;
@@ -90,7 +96,7 @@ nav li {
     margin: auto;
     font-size: 9em;
     letter-spacing: 10px;
-    color: rgb(99, 30, 30);
+    color: var(--redB);
     text-shadow: 5px 5px rgb(7, 7, 7);
     text-align: center;
     position: absolute;
@@ -120,7 +126,7 @@ nav li {
 }
 
 .menu-boxes p, .menu-boxes h2 {
-    color: rgb(150, 12, 12);
+    color: var(--redB);
     text-align: center;
     
 }
@@ -143,7 +149,7 @@ nav li {
     background-size: cover;
     background-color: rgb(73, 73, 73);
     border-radius: 10px;
-    border: 1em solid rgb(99, 30, 30);
+    border: 1em solid var(--redB);
 }
 
 #pic-1 {
@@ -184,7 +190,7 @@ nav li {
 
 .specials p, .specials h2 {
     font-size: 2em;
-    color: rgb(99, 30, 30);
+    color: var(--redB);
     margin: 10px;
 }
 
@@ -210,7 +216,7 @@ nav li {
     background-image: url(/imgs/pancakes1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1em solid rgb(99, 30, 30);
+    border: 1em solid var(--redB);
     border-radius: 10px;
     margin-bottom: 2em;
 }
@@ -221,4 +227,10 @@ nav li {
 /* Contact section */
 #reverse-tone {
     background-color: white;
+    width: 100%;
+    height: 50vh;
+}
+
+.section-headings h2 {
+    
 }
