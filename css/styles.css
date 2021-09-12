@@ -6,6 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgb(199, 199, 199);
 }
 
 /* Section headings */
@@ -18,7 +19,7 @@ body {
 
 /* Nav and hero sections */
 nav {
-    height: 5vh;
+    height: 6vh;
     background-color: rgb(20, 20, 20);
     /* display: flex; */
     /* justify-content: space-around;
@@ -27,7 +28,7 @@ nav {
 }
 
 nav img {
-    height: 4vh;
+    height: 5vh;
     width: 100px;
     display: inline;
 }
@@ -48,7 +49,8 @@ nav a {
 }
 
 nav a:hover { 
-    color: rgba(255, 255, 255, 0.75); 
+    color: rgba(255, 255, 255, 0.75);
+    transition: .5s; 
 }
 
 nav ul {
@@ -97,8 +99,8 @@ nav li {
     display: flex;
     justify-content: center;
     align-content: center;
-    border: 5px solid rgb(199, 199, 199);
-    background-color: rgb(199, 199, 199);;
+    border-top: 1em solid rgb(99, 30, 30);
+    /* background-color: rgb(199, 199, 199); */
 }
 
 .menu-boxes {
@@ -118,29 +120,29 @@ nav li {
     height: 50%;
     
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-color: rgb(73, 73, 73);
     border-radius: 10px;
     border: 1em solid rgb(99, 30, 30);
 }
 
 #pic-1 {
-    background-image: url(/imgs/coffe_mug.jpg);
+    background-image: url(/imgs/coffe_mug1.jpg);
 }
 
 #pic-2 {
-    background-image: url(/imgs/doughnut.jpg);
+    background-image: url(/imgs/doughnut1.jpg);
 }
 
 #pic-3 {
-    background-image: url(/imgs/tea.jpg);
+    background-image: url(/imgs/tea1.jpg);
 }
 
 
 
 /* Specials */
 #two-tone {
-    background-color: black;
+    background-color: rgb(46, 44, 44);
 }
 
 .specials {
@@ -148,12 +150,18 @@ nav li {
     margin: auto;
     width: 75%;
     height: 50vh;
-    border: 2px solid black;
+    border: .5em solid black;
 }
 
-.specials p, h2 {
+.specials p, .specials h2 {
     font-size: 2em;
-    /* color: blue; */
+    color: blue;
+    margin: 10px;
+}
+
+.specials p {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .special-items {
@@ -162,9 +170,14 @@ nav li {
 }
 
 #special-pic {
+    flex-grow: 2;
     width: 100%;
-    height: 79%;
-    background-color: rgb(73, 73, 73);
+    height: auto;
+    background-color: white;
+    
+    background-image: url(/imgs/pancakes1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #new-color {
